@@ -4,11 +4,14 @@ import { Card } from './components';
 
 function App() {
   return (
-    <div className="container">
-      <button type="button" className="dark:bg-green-200 bg-yellow-400">
+    <div className="container mx-auto">
+      <button
+        type="button"
+        className="dark:bg-green-200 bg-yellow-400 text-primary"
+      >
         这是一个按钮
       </button>
-      <Card head={<div>这是一个头部</div>}>这是一个卡片</Card>
+      <Card head={'这是一个头部'}>这是一个卡片</Card>
     </div>
   );
 }

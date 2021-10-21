@@ -29,9 +29,19 @@ const ByCard = React.forwardRef(
     return (
       <div
         ref={ref}
-        className={classNames(['flex flex-col h-full bg-white'], { className })}
+        className={classNames(['flex flex-col h-full bg-white p-2'], {
+          className,
+        })}
       >
-        {head && <div className={'text-gray-700 h-10'}>{head}</div>}
+        {head && (
+          <div
+            className={
+              'flex text-gray-700 h-10 text-base align-middle items-center'
+            }
+          >
+            {head}
+          </div>
+        )}
         <div className={classNames(['flex-1 overflow-hidden', { draggable }])}>
           {children}
         </div>
